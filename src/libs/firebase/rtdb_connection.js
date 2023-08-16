@@ -1,4 +1,4 @@
-import "dotenv/config.js";
+import "dotenv/config";
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
