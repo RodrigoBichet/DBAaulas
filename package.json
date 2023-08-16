@@ -1,0 +1,11 @@
+{
+    "name": "Aulas",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "firebase": "^10.1.0"
+    }
+}
