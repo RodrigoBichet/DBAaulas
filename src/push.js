@@ -1,3 +1,4 @@
+require("dotenv").config();
 import db from "../src/libs/firebase/rtdb_connection.js";
 import { push, ref } from "firebase/database";
 

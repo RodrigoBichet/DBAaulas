@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import db from "../src/libs/firebase/rtdb_connection.js";
 import { ref, child, set } from "firebase/database";
 
