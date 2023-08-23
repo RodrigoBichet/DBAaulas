@@ -1,19 +1,19 @@
-import "dotenv/config";
+//import "dotenv/config";
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
+import firebaseConfig from "../../../env.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCSioQo_YrRu63E11FTpxnqll5chnecF-E",
-    authDomain: "projeto-bda01.firebaseapp.com",
-    databaseURL: "https://projeto-bda01-default-rtdb.firebaseio.com",
-    projectId: "projeto-bda01",
-    storageBucket: "projeto-bda01.appspot.com",
-    messagingSenderId: "814878300890",
-    appId: "1:814878300890:web:01192563722310865a63e3",
-};
+// const firebaseConfig = {
+//     apiKey: process.env.APP_API_KEY,
+//     authDomain: process.env.APP_AUTH_DOMAIN,
+//     databaseURL: process.env.APP_DATABASE_URL,
+//     projectId: process.env.APP_PROJECT_ID,
+//     storageBucket: process.env.APP_STORAGE_BUCKET,
+//     messagingSenderId: process.env.APP_MESSAGING_SENDER_ID,
+//     appId: process.env.APP_APP_ID,
+// };
 
-console.log(firebaseConfig);
-
+// console.log(firebaseConfig);
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 export default database;
